@@ -15,8 +15,6 @@
 		40D88C201E24BBCB0015F0FC /* SelectTableViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D88C1F1E24BBCB0015F0FC /* SelectTableViewDemoTests.m */; };
 		40D88C2B1E24BBCB0015F0FC /* SelectTableViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D88C2A1E24BBCB0015F0FC /* SelectTableViewDemoUITests.m */; };
 		40D88C3A1E24C0440015F0FC /* UIView+SetRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D88C391E24C0440015F0FC /* UIView+SetRect.m */; };
-		40D88C3D1E24C55B0015F0FC /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D88C3C1E24C55B0015F0FC /* CustomCell.m */; };
-		40D88C401E24C5690015F0FC /* CellDataAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D88C3F1E24C5690015F0FC /* CellDataAdapter.m */; };
 		40D88C4C1E26223D0015F0FC /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D88C4B1E26223D0015F0FC /* BaseViewController.m */; };
 		40D88C4F1E2759B10015F0FC /* ChooseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D88C4E1E2759B10015F0FC /* ChooseModel.m */; };
 		40D88C531E275BB50015F0FC /* ChooseModelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D88C521E275BB50015F0FC /* ChooseModelCell.m */; };
@@ -57,10 +55,6 @@
 		40D88C2C1E24BBCB0015F0FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40D88C381E24C0440015F0FC /* UIView+SetRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SetRect.h"; sourceTree = "<group>"; };
 		40D88C391E24C0440015F0FC /* UIView+SetRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SetRect.m"; sourceTree = "<group>"; };
-		40D88C3B1E24C55B0015F0FC /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
-		40D88C3C1E24C55B0015F0FC /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
-		40D88C3E1E24C5690015F0FC /* CellDataAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellDataAdapter.h; sourceTree = "<group>"; };
-		40D88C3F1E24C5690015F0FC /* CellDataAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellDataAdapter.m; sourceTree = "<group>"; };
 		40D88C4A1E26223D0015F0FC /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		40D88C4B1E26223D0015F0FC /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		40D88C4D1E2759B10015F0FC /* ChooseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseModel.h; sourceTree = "<group>"; };
@@ -124,7 +118,6 @@
 				40D88C4A1E26223D0015F0FC /* BaseViewController.h */,
 				40D88C4B1E26223D0015F0FC /* BaseViewController.m */,
 				40D88C501E2759BA0015F0FC /* 选择工具 */,
-				40D88C411E24C8E30015F0FC /* 工具 */,
 				40D88C0E1E24BBCB0015F0FC /* Main.storyboard */,
 				40D88C111E24BBCB0015F0FC /* Assets.xcassets */,
 				40D88C131E24BBCB0015F0FC /* LaunchScreen.storyboard */,
@@ -160,22 +153,11 @@
 			path = SelectTableViewDemoUITests;
 			sourceTree = "<group>";
 		};
-		40D88C411E24C8E30015F0FC /* 工具 */ = {
+		40D88C501E2759BA0015F0FC /* 选择工具 */ = {
 			isa = PBXGroup;
 			children = (
 				40D88C381E24C0440015F0FC /* UIView+SetRect.h */,
 				40D88C391E24C0440015F0FC /* UIView+SetRect.m */,
-				40D88C3E1E24C5690015F0FC /* CellDataAdapter.h */,
-				40D88C3F1E24C5690015F0FC /* CellDataAdapter.m */,
-				40D88C3B1E24C55B0015F0FC /* CustomCell.h */,
-				40D88C3C1E24C55B0015F0FC /* CustomCell.m */,
-			);
-			name = "工具";
-			sourceTree = "<group>";
-		};
-		40D88C501E2759BA0015F0FC /* 选择工具 */ = {
-			isa = PBXGroup;
-			children = (
 				40D88C4D1E2759B10015F0FC /* ChooseModel.h */,
 				40D88C4E1E2759B10015F0FC /* ChooseModel.m */,
 				40D88C511E275BB50015F0FC /* ChooseModelCell.h */,
@@ -324,10 +306,8 @@
 				40D88C4C1E26223D0015F0FC /* BaseViewController.m in Sources */,
 				40D88C3A1E24C0440015F0FC /* UIView+SetRect.m in Sources */,
 				40D88C0A1E24BBCB0015F0FC /* AppDelegate.m in Sources */,
-				40D88C401E24C5690015F0FC /* CellDataAdapter.m in Sources */,
 				40D88C071E24BBCB0015F0FC /* main.m in Sources */,
 				40D88C531E275BB50015F0FC /* ChooseModelCell.m in Sources */,
-				40D88C3D1E24C55B0015F0FC /* CustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
